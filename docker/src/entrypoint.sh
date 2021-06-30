@@ -16,7 +16,8 @@ show_config() {
     echo "CVD-Update configuration..."
     cvd config show --config $CVD_DIR/config.json
     echo "Current contents in $CVD_DIR/databases directory..."
-    ls -al $CVD_DIR/databases
+    #ls not yet existing directory will cause a crash
+    #ls -al $CVD_DIR/databases
 }
 
 # CVD Database Functions
